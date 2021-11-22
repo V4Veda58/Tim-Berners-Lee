@@ -1,60 +1,119 @@
-body
-{
-    text-align: center;
+body{
+    margin: 0;
+    padding-top: 800px;
 }
-#welcome {
-    color: #FFFFFF;
+.profile{
+    width: 175px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+        
+}
+#welcome{
+    position: absolute;
+    overflow: hidden;
+    height: 800px;
+    color:snow;
+    top: 0;
     bottom: 0;
-    background: linear-gradient(#60ebeb 0%, #27ae60 100%);
+    left: 0;
+    right: 0;
+    opacity: 0.83;
+    background: linear-gradient(#22f2e8 0%,#177efc 100%);
     display: table;
     width: 100%;
     height: 100%;
     z-index: 9;
+        
+        
 }
-#bio {
-    font-family: 'Cinzel Decorative', cursive;
-    padding: 50px;
-    text-align: center;
+.parallax-inner{
+position: relative;
+display: table-cell;
+text-align: center;
+vertical-align: middle;
 }
-h1 {
-    font-size: 40px;
-    font-family: sans-serif;
+h1{
+ font-size: 40px;
+ font-family: inherit;
+    line-height: 1.2;
     font-weight: 300;
 }
-
-.line {
+h2{
+    font-size: 30px;
+    font-family: monospace;
+    line-height: 1.2;
+    font-weight: 300;
+}
+#name{
+    font-size: 30px;
+    line-height: 1.2;
+    font-family: 'Odibee Sans', cursive;
+}
+#bio{
+    padding: 50px;
+    font-size: 42px;
+    text-align: center;
+}
+.line{
     height: 6px;
-    background-color: #000;
+    background-color: aliceblue;
     width: 70px;
     margin: 8px auto;
+        
 }
-#contact iframe
-{
+p{
+    max-width: 450px;
+    margin: 25px auto;
+    font-size: 17px;
+    line-height: 1.3;
+}
+.menu{
+    position:fixed;
+    background:blue;
     width: 100%;
+    top:0px;
+    margin-top: 0px;
+    z-index: 10;
+    cursor: pointer;
 }
-.contact_1 h3
-{
+.links{
     display: inline;
+    color: deeppink;
+    padding-right: 25px;
+    padding-left: 33px;
+    font-family: fantasy;
+    font-size: 20px;
+        
 }
-.contact_1 a
-{
+.links:hover{
+    background-color:violet;
+    font-size: 20px;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+    color: crimson;
+    text-shadow: 2px 2px red;
+}
+.article:hover{
+    color: darkblue;
+}
+html{
+    scroll-behavior: smooth;
+}
+#writings a{
+    text-shadow: none !important;
+    text-decoration: underline !important;
+    color: crimson !important;
+        
+}
+#contact{
+    background: cyan;
+}
+.contact1 a{
+    color: aliceblue;
     text-shadow: none;
 }
-
-
-#videos iframe
-{
-    width: 80%;
-}
-
-
-input
-{
-    background: grey;
-}
-.my_nav_bar{
-position: sticky;
-top: 0;
-z-index: 999;
-    
+.contact1 h3{
+    display: inline;
 }
